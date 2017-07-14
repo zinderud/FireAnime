@@ -9,9 +9,9 @@ export class AppService {
     private router: Router,
     private _location: Location
   ) {
-    this.router.events.filter(event => event instanceof NavigationEnd).subscribe(event => {
+ /*    this.router.events.filter(event => event instanceof NavigationEnd).subscribe(event => {
         window.scroll(0, 0);
-    });
+    }); */
   }
 
   public goToHomePage() {
