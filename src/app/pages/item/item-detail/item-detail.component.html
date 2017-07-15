@@ -1,0 +1,13 @@
+<p>
+  item-detail 
+</p>
+
+<div class="card-content">
+  aktifmi:{{item.active}}
+</div>
+<div class="card-footer">
+
+  <span class="button" *ngIf="item.active" (click)="updateActive(false)">pasif</span>
+  <span class="button"   *ngIf="item.active" (click)="updateActive(true)">Aktif</span>
+  <span  class="button"  (click)="deleteItem()">Sil</span>   
+</div>

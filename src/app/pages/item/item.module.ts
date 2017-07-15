@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ItemService } from './shared/item.service';
 import { ItemListComponent } from './item-list/item-list.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ItemFormComponent } from './item-form/item-form.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,7 @@ import { ItemListComponent } from './item-list/item-list.component';
     FormsModule,
     AngularFireDatabaseModule
   ],
-  declarations: [ItemListComponent],
+  declarations: [ItemListComponent, ItemDetailComponent, ItemFormComponent],
    providers: [
     ItemService
   ]

@@ -2,6 +2,14 @@
   item-list works!
 </p>
 
-<div  >
-
+<div *ngFor="let item of items"  >
+<app-item-detail [item]="item"></app-item-detail>
 </div>
+
+
+
+<button type="button" class="button is-danger" (click)='deleteItems()'>Listeden sil</button>
+
+<hr>
+
+<app-item-form></app-item-form>
