@@ -30,6 +30,7 @@ export class ItemService {
 
   //yeni item oluştur
   createItem(item: Item): void {
+   
     this.items.push(item)
     .catch(error => this.handleError(error));
   }

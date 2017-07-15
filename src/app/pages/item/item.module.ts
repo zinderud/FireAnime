@@ -18,6 +18,7 @@ import { ItemFormComponent } from './item-form/item-form.component';
   declarations: [ItemListComponent, ItemDetailComponent, ItemFormComponent],
    providers: [
     ItemService
-  ]
+  ],
+  exports:[ItemListComponent, ItemDetailComponent, ItemFormComponent],
 })
 export class ItemModule { }

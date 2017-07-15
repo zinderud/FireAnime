@@ -16,7 +16,8 @@ export class ItemListComponent implements OnInit {
   constructor(private itemServis:ItemService ) { }
   ngOnInit() {
     //bak https://github.com/angular/angularfire2/blob/master/docs/4-querying-lists.md
-    this.items=this.itemServis.getItemsList({limitToLast: 5})
+    this.items=this.itemServis.getItemsList({limitToLast: 5});
+/*  this.items.forEach(x=>console.log(x)) */
   }
 
   deleteItems(){

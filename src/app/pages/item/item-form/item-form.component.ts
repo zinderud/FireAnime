@@ -29,7 +29,8 @@ export class ItemFormComponent implements OnInit {
         null,
         Validators.compose([
           Validators.required,
-          Validators.pattern("[a-z0-9._%+-]")
+          //Validators.pattern("[a-z]"),
+           Validators.minLength(3)
         ])
       ]
     });
@@ -37,8 +38,10 @@ export class ItemFormComponent implements OnInit {
   ngOnInit() {}
   //yeni item olustur ve item nesnesini sıfırla
  public submitForm(value){
+
     if(!value.title|| !value.title){return;}
     if(this.complexForm.status==="VALID"){
+    
          this.itemServis.createItem(value);
              this.complexForm.reset()
     }
