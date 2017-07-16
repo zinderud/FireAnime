@@ -9,11 +9,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "sw": "sw-precache --verbose --config=sw-precache-config.js"
+    "sw": "sw-precache --verbose --config=sw-precache-config.js",
+    "yukle-db": "./node_modules/.bin/ts-node ./db/yukle-db.ts",
+    "sil-server": "./node_modules/.bin/ts-node ./db/sil-server.ts"
   },
   "private": true,
   "dependencies": {
-   "@angular/animations": "^4.2.6",
+    "@angular/animations": "^4.2.6",
     "@angular/common": "^4.2.6",
     "@angular/compiler": "^4.2.6",
     "@angular/compiler-cli": "^4.2.6",
@@ -37,7 +39,11 @@
     "sw-toolbox": "3.6.0",
     "typescript": "^2.3.2",
     "ngx-disqus": "^2.1.1",
-    "zone.js": "^0.8.12"
+    "zone.js": "^0.8.12",
+    "@types/lodash": "^4.14.69",
+    "@types/request": "0.0.47",
+    "firebase-queue": "^1.6.1",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "@angular/cli": "^1.0.6",

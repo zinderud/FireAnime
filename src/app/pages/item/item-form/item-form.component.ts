@@ -32,7 +32,8 @@ export class ItemFormComponent implements OnInit {
           //Validators.pattern("[a-z]"),
            Validators.minLength(3)
         ])
-      ]
+      ],
+      active:[true ]
     });
   }
   ngOnInit() {}
