@@ -23,18 +23,18 @@ dbData.kitaplar.forEach( kitap => {
 
 /* 
 veritabanında yapmak istediğimiz 
-"kitaplar" : {
-    "-Kp7p-YCh97CuRmSrzKv" : {
+ "kitaplar" : {
+    "-KpA-g0NCmo74lPHskwD" : {
       "acıklama" : "İkbal'in olgunluk dönemi eserlerinden olan Cavitname, bu büyük düşünüründüşünce silsilesinin devamı ve en önemli dönüm noktası durumundadır.",
       "url" : "cavidname",
       "yazar" : "Muhammed ikbal"
     },
-    "-Kp7p-YLKAafgquZvqQX" : {
+    "-KpA-g0VehCkbR7RJkqb" : {
       "acıklama" : "Mevlananın 6 ciltten oluşan ....",
       "url" : "mesnevi",
       "yazar" : "Mevlana"
     }
-  } */
+  }*/
 
   const bolumlerRef = database().ref('bolumler');
   let KitapKeyHerBolum = [];
@@ -44,32 +44,42 @@ veritabanında yapmak istediğimiz
     console.log('adding bolum ', bolum.url);
 
     KitapKeyHerBolum.push(bolumlerRef.push({
+        url:bolum.url,
         sayfa: bolum.sayfa,
         tags: bolum.tags,
         bolum_acıklama: bolum.bolum_acıklama, 
+        kitapId:kitapRef.key
       }).key);
 
   });
-/*  "bolumler" : {
-    "-Kp7p-YH8StTIcPP9G4Y" : {
+/*   "bolumler" : {
+    "-KpA-g0StnvQUIqAW0nM" : {
       "bolum_acıklama" : "cavidname bolum1 acıklama",
+      "kitapId" : "-KpA-g0NCmo74lPHskwD",
       "sayfa" : "2:49",
-      "tags" : "bol1"
+      "tags" : "bol1",
+      "url" : "bolum1"
     },
-    "-Kp7p-YJpbELBSFtDhou" : {
+    "-KpA-g0U-Hcv_tkctKAY" : {
       "bolum_acıklama" : "cavidname bolum2 acıklama",
+      "kitapId" : "-KpA-g0NCmo74lPHskwD",
       "sayfa" : "22:49",
-      "tags" : "bol2"
+      "tags" : "bol2",
+      "url" : "bolum2 "
     },
-    "-Kp7p-YMgF0ito4PdO9i" : {
+    "-KpA-g0VehCkbR7RJkqc" : {
       "bolum_acıklama" : "mesnevi bolum1 acıklama",
+      "kitapId" : "-KpA-g0VehCkbR7RJkqb",
       "sayfa" : "2:49",
-      "tags" : "bol1"
+      "tags" : "bol1",
+      "url" : "bolum1"
     },
-    "-Kp7p-YNAftMpeVwD_ge" : {
+    "-KpA-g0W874MpcNB-NSk" : {
       "bolum_acıklama" : "mesnevi bolum2 acıklama",
+      "kitapId" : "-KpA-g0VehCkbR7RJkqb",
       "sayfa" : "22:49",
-      "tags" : "bol2"
+      "tags" : "bol2",
+      "url" : "bolum2 "
     }
   }, */
 
@@ -83,14 +93,15 @@ veritabanında yapmak istediğimiz
     KitapBolumAssociation.set(true);
   });
 
-/*    "KitapHerBolum" : {
-    "-Kp7p-YCh97CuRmSrzKv" : {
-      "-Kp7p-YH8StTIcPP9G4Y" : true,
-      "-Kp7p-YJpbELBSFtDhou" : true
+  
+/*      "KitapHerBolum" : {
+    "-KpA-g0NCmo74lPHskwD" : {
+      "-KpA-g0StnvQUIqAW0nM" : true,
+      "-KpA-g0U-Hcv_tkctKAY" : true
     },
-    "-Kp7p-YLKAafgquZvqQX" : {
-      "-Kp7p-YMgF0ito4PdO9i" : true,
-      "-Kp7p-YNAftMpeVwD_ge" : true
+    "-KpA-g0VehCkbR7RJkqb" : {
+      "-KpA-g0VehCkbR7RJkqc" : true,
+      "-KpA-g0W874MpcNB-NSk" : true
     }
   }, */
 
