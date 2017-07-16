@@ -1,7 +1,7 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+ 
 
 /src/environments/environment.prod.ts
-/src/environments/environment.ts
+ src/environments/*.ts
 NOTES.md
 functions/*
 
@@ -49,6 +49,11 @@ Thumbs.db
 # Firebase
 .firebaserc
 /environments
-/src/environments/*.js
-/src/environments/*.ts
- 
+src/environments/*.js
+src/environments/*.ts
+
+./src/environments/environment.prod.ts
+./src/environments/environment.ts
+
+src/environments/environment.prod.ts
+src/environments/environment.ts
