@@ -1,0 +1,44 @@
+.hani{
+    column-count: 3;
+    column-gap: 40px;/* sutunlar arası boşluk */
+    color: green;
+    column-rule-style: solid;/*Sütunlara kenarlık vermek*/
+     column-rule-width: 1px;
+         column-rule-color: gray;
+         opacity: 0.5;
+         transition: all 1s;/*  bir saniye boyunca hepsi etkile*/
+         border: 1px solid darkcyan;padding: 5px;
+         box-sizing: border-box;
+}
+.hani:hover{
+    opacity: 1.0;
+}
+.observer{
+    display: flex;
+    background-color:rebeccapurple;
+        direction:ltr;/*yön*/
+    flex-direction: row-reverse;
+    /*
+    row: Elemanları soldan sağa yatay sıralar. (Varsayılan)
+    row-reverse: Elemanları sağdan sola yatay sıralar.
+    column: Elemanları yukarıdan aşağı dikey sıralar.
+    column-reverse: Elemanları aşağıdan yukarı dikey sıralar.
+*/
+   display: flex;
+   justify-content: flex-start
+   /*
+    flex-start: Elemanlar kapsayıcının başından başlayarak hizalanır. (Varsayılan)
+    flex-end: Elemanlar kapsayıcının sonundan başlayarak hizalanır.
+    center: Elemanlar kapsayıcının ortasından başlayarak hizalanır.
+    space-between: Elemanlardan ilk kutu kapsayıcının başında, son kutu kapsayıcının sonunda olacak şekilde eşit olarak hizalanır.
+    space-around: Elemanlar arası boşluk eşit olacak şekilde hizalanır.
+*/
+}
+.ele{
+    background-color: darkolivegreen;
+    text-align: center;
+    width: 120px;
+    height: 100px;
+    margin: 10px;
+ 
+}

@@ -6,9 +6,10 @@ import { HttpModule } from '@angular/http';
 ///// Start FireStarter
 import { environment } from "../environments/environment";
 import { AngularFireModule } from "angularfire2";
+import { AniComponent } from './pages/ani/ani.component';
 export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AniComponent],
   imports: [
     BrowserModule,   HttpModule,
     AppRoutingModule,
