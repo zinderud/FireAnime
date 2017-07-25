@@ -8,6 +8,10 @@ import { environment } from "../environments/environment";
 import { AngularFireModule } from "angularfire2";
 import { AniComponent } from './pages/ani/ani.component';
 import { SendEmailComponent } from './pages/send-email/send-email.component';
+
+
+  
+
 export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
   declarations: [AppComponent, AniComponent, SendEmailComponent],

@@ -20,10 +20,8 @@
       "prefix": "app",
       "styles": [
 
-        "../node_modules/font-awesome/css/font-awesome.min.css",
-         "./assets/sass/main.scss",
-         "./assets/sass/noscript.scss",
-        "styles.scss"
+        "../node_modules/font-awesome/css/font-awesome.min.css" 
+   
       ],
       "scripts": [
          "assets/js/jquery.min.js",

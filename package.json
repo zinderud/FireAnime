@@ -45,7 +45,8 @@
     "sendgrid": "^5.2.0",
     "sw-toolbox": "3.6.0",
     "typescript": "^2.3.2",
-    "zone.js": "^0.8.12"
+    "zone.js": "^0.8.12",
+    "mapbox": "^1.0.0-beta8"
   },
   "devDependencies": {
     "@angular/cli": "^1.0.6",

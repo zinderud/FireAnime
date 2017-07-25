@@ -6,7 +6,9 @@ npm run  sw
 
 
 
-
+/*     ,  "./assets/sass/main.scss",
+         "./assets/sass/noscript.scss",
+        "styles.scss" */
 
 
 
