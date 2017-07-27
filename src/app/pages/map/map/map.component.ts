@@ -6,7 +6,7 @@ import{ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  styleUrls: ['./map.component.css'],providers:[MapService]
 })
 export class MapComponent implements OnInit {
 
